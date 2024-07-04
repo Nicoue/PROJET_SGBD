@@ -1,0 +1,94 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styles du corps */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+/* Conteneur principal */
+.container {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    color: #fff;
+}
+
+/* Titre principal */
+.container h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Boîte de saisie */
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Icônes de saisie */
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Bouton de soumission */
+.btn {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #f1f1f1;
+}
+
+/* Message d'erreur */
+p {
+    text-align: center;
+    margin-top: 10px;
+}
